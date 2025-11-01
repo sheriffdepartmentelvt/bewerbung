@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Santos Sheriff Department - Bewerbung</title>
+
+    <!-- CSS-Datei einbinden -->
+    <script type="module" crossorigin src="/assets/index-RnkpmDAC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bu0NOs3m.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header">
+        <div class="">
+          <div class=""></div>
+        </div>
+        <h1 class="title">LOS SANTOS SHERIFF DEPARTMENT</h1>
+        <p class="subtitle">Protect and Serve</p>
+      </header>
+
+      <main class="main-content">
+        <div class="intro-section">
+          <h2 class="section-title">Werde Teil unseres Teams</h2>
+          <p class="intro-text">
+            Das Los Santos Sheriff Department sucht motivierte und engagierte Bürger, die bereit sind,
+            ihrer Gemeinde zu dienen und für Recht und Ordnung zu sorgen.
+          </p>
+        </div>
+
+        <form id="applicationForm" class="application-form">
+          <div class="form-section">
+            <h3 class="form-section-title">Persönliche Informationen</h3>
+
+            <div class="form-group">
+              <label for="fullName">(IC) Vorname Nachname:</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="age">(IC) Alter:</label>
+              <input type="number" id="age" name="age" min="18" max="99" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">(IC) Telefonnummer:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="form-section-title">Bewerbungsfragen</h3>
+
+            <div class="form-group">
+              <label for="experience">Haben Sie bereits Erfahrung in anderen State Fraktionen?
+              <textarea id="experience" name="experience" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="motivation">Warum möchten Sie beim Los Santos Sheriff Department arbeiten?</label>
+              <textarea id="motivation" name="motivation" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="strengths">Was sind Ihre größten Stärken/Schwächen?</label>
+              <textarea id="strengths" name="strengths" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="situation">Wie würden Sie mit einer stressigen Situation umgehen?</label>
+              <textarea id="situation" name="situation" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="availability">Zu welchen Zeiten sind sie Aktiv im Dienst?</label>
+              <input type="text" id="availability" name="availability" required>
+            </div>
+
+            <div class="form-group">
+              <label for="criminal">Haben Sie Vorstrafen?</label>
+              <select id="criminal" name="criminal" required>
+                <option value="">Bitte wählen</option>
+                <option value="Nein">Nein</option>
+                <option value="Ja">Ja</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="additional">Zusätzliche Informationen</label>
+              <textarea id="additional" name="additional" rows="4"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Bewerbung absenden</span>
+          </button>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+          <div class="success-content">
+            <div class="success-icon"></div>
+            <h3>Bewerbung erfolgreich eingereicht!</h3>
+            <p>
+              Vielen Dank für Ihr Interesse am Los Santos Sheriff Department. Wir werden Ihre Bewerbung prüfen
+              und uns zeitnah bei Ihnen melden.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2025 Los Santos Sheriff Department. All rights reserved.</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
