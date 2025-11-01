@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
+    // Webhook-Namen aus Vor- und Nachname erstellen
+    const webhookName = data.fullName ? `${data.fullName} - LSSD Bewerbung` : 'LSSD Bewerbungssystem';
+
     const embed = {
       title: 'Neue Bewerbung - Los Santos Sheriff Department',
       color: 13938487,
@@ -95,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+          username: webhookName, // Hier wird der Webhook-Name gesetzt
           embeds: [embed]
         })
       });
